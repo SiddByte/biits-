@@ -1,0 +1,62 @@
+.product-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .course-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .course-list li {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .course-details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course-details button {
+    margin-top: 10px;
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  
+  .hero-section-course {
+    background-image: url('../Assests/coursebg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* background-size: auto; */
+    background-position: center;
+    padding: 80px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-content-product {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .product-page {
+    /* Your existing styles here */
+  }
+  

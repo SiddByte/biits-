@@ -1,0 +1,39 @@
+/* CSS for Testimonial Section */
+.testimonial-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* CSS for Individual Testimonial */
+  .testimonial {
+    text-align: center;
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .testimonial-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 10px;
+  }
+  
+  .testimonial-text {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+  }
+  
+  /* Additional styling can be added as per your design requirements */
+  
