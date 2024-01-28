@@ -12,8 +12,7 @@ import AdmissionForm from "./Admission/Admission";
 import Project from "./Why Join Us Page/ProjectBase";
 import Internship from "./Why Join Us Page/Intern";
 import InstructorPage from "./Why Join Us Page/Instructor";
-
-
+import Placement from "./Sections/Placement";
 
 
 const App = () => {
@@ -31,7 +30,8 @@ const App = () => {
             <Route path="/project" element={<Project/>}/>
             <Route path="/Intership" element={<Internship/>}/>
             <Route path="/Instructor" element={<InstructorPage/>}/>
-            </Routes>
+            <Route path="/Placement" element={<Placement/>}/>
+          </Routes>
         </div>
       </Router>
     </div>

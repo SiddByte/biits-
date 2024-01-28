@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import emailjs from 'emailjs-com';
 import './Form.css';
+import SuccessPopup from '../SuccessPopup/Popup';
 
 class MyForm extends Component {
   constructor(props) {
@@ -13,6 +14,7 @@ class MyForm extends Component {
       course: 'Select a course',
       institution: '',
       emailError: '',
+      formSubmitted: false, // Add a state for form submission
     };
   }
 
@@ -50,6 +52,7 @@ class MyForm extends Component {
       emailjs.send('service_v7c8xdi', 'template_salrx3j', emailParams, 'nPJUW3uiTKzd2Yia_')
         .then((response) => {
           console.log('Email sent successfully:', response);
+          this.setState({ formSubmitted: true }); // Update state for form submission
         })
         .catch((error) => {
           console.error('Failed to send email:', error);
@@ -76,10 +79,14 @@ class MyForm extends Component {
   render() {
     return (
       <div className="container mt-4">
-            <form onSubmit={this.handleSubmit}>
-          <div className="form-group">
+        {this.state.formSubmitted ? (
+          <SuccessPopup />
+        ) : (
+          <form onSubmit={this.handleSubmit}>
+
+<div className="form-group">
             <label>Name:</label>
-            <input
+            <input required
               type="text"
               className="form-control"
               name="name"
@@ -90,7 +97,7 @@ class MyForm extends Component {
 
           <div className="form-group">
             <label>Email:</label>
-            <input
+            <input required
               type="email"
               className={`form-control ${this.state.emailError ? 'is-invalid' : ''}`}
               name="email"
@@ -104,7 +111,7 @@ class MyForm extends Component {
 
           <div className="form-group">
             <label>Mobile Number:</label>
-            <input
+            <input required
               type="tel"
               className="form-control"
               name="mobile"
@@ -115,7 +122,7 @@ class MyForm extends Component {
 
           <div className="form-group">
             <label>Date of Birth:</label>
-            <input
+            <input required
               type="date"
               className="form-control"
               name="dob"
@@ -126,7 +133,7 @@ class MyForm extends Component {
 
           <div className="form-group">
             <label>Course:</label>
-            <select
+            <select required
               className="form-control"
               name="course"
               value={this.state.course}
@@ -156,7 +163,9 @@ class MyForm extends Component {
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
-        </form>
+           
+          </form>
+        )}
       </div>
     );
   }

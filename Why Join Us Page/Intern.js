@@ -37,7 +37,7 @@ const Internship = () => {
           {/* Add the image gallery below */}  
         </div>
       </div>
-      <p className='para'>At BIITS Academy , we're on a mission to make a difference in the lives of [briefly describe the beneficiaries or the problem you aim to solve]. We believe that together, we can bring about positive change and create a brighter future..</p>
+      <p className='para'> Beyond classroom education, our main focus is on practical skills. Our internship program opportunity provides you hands-on experience, allowing you to apply your learnings in real-world scenarios. Join us so that we can help you to bridge the gap between theory and practice. Gain valuable insights, work on live projects and elevate your skills to new heights. </p>
       <div className="image-gallery">
         <img src={images[currentImage]} alt={`Image ${currentImage}`} />
       </div>

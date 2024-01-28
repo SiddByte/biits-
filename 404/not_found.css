@@ -1,0 +1,17 @@
+/* NotFound.css */
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .not-found-content {
+    text-align: center;
+  }
+  
+  img {
+    width: 300px; /* Adjust the width as needed */
+    margin-top: 20px;
+  }
+  

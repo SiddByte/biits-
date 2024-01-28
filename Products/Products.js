@@ -10,6 +10,7 @@ import webdev from '../Assests/webdev.png';
 import AI from '../Assests/AI.png';
 import Flutter from '../Assests/flutter.png';
 import Ui from '../Assests/UIUX.png';
+import C_Couese from '../AboutCourses/C/C/C++';
 
 const courses = [
     {

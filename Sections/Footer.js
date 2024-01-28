@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import './Footer.css'; 
 
 const Footer = () => {
@@ -6,27 +7,26 @@ const Footer = () => {
     <div className="footer">
       <div className="social-icons">
         <a href="#" className="icon">
-          <i className="fab fa-facebook-f"></i>
+          <FaFacebook size={30} />
         </a>
-        <a href="#" className="icon">
-          <i className="fab fa-twitter"></i>
+        {/* <a href="#" className="icon">
+          <FaTwitter size={30} />
+        </a> */}
+        <a href="https://www.instagram.com/biits_academy_/" className="icon">
+          <FaInstagram size={30} />
         </a>
+        {/* <a href="#" className="icon">
+          <FaLinkedinIn size={30} />
+        </a> */}
         <a href="#" className="icon">
-          <i className="fab fa-instagram"></i>
-        </a>
-        <a href="#" className="icon">
-          <i className="fab fa-linkedin-in"></i>
-        </a>
-        <a href="#" className="icon">
-          <i className="fab fa-youtube"></i>
+          <FaYoutube size={30} />
         </a>
       </div>
       <div className="copyright">
-        &copy; 2023 Your Company. All Rights Reserved.
+        &copy; 2023 biits_academy_. All Rights Reserved.
       </div>
     </div>
   );
 }
 
 export default Footer;
-

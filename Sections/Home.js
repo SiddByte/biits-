@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 import './About.css';
-import Popup from "../Popup/PopUp";
 import NavBar from '../Navbar/Navbar';
 import Footer from './Footer';
-import { Link } from 'react-router-dom';
 import Hero from './Hero';
 import About from './About';
 import Why from './Why';
@@ -101,7 +99,6 @@ const Home= ()=> {
 
             <About/>
 
-
     <button
       className={`scroll-to-top-button ${isVisible ? 'visible' : ''}`}
       onClick={scrollToTop}
@@ -110,7 +107,7 @@ const Home= ()=> {
     </button>
 
 
-    <Popup />
+    {/* <Popup /> */}
 
     <Footer />
     </>

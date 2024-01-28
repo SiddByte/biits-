@@ -7,7 +7,7 @@ function Hero() {
     <>
       <div className="hero-section-main">
         <div className="hero-content-main">
-          <h3 className="hero-heading">Your Journey to Success Begins Here!</h3>
+          <h3 className="hero-heading-main">Your Journey to Success Begins Here!</h3>
           <p className="hero-subtext">Discover amazing things here.</p>
           <Link to="/products">
             <button className="cta-button">Get Started</button>

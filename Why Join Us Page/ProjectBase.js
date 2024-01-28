@@ -48,7 +48,10 @@ const Project = () => {
         {/* <button className="cta-button">Get Started</button> */}
       </div>
     </div>
-
+          <p className='para'> Explore the world of coding with our academy’s students! 
+Here are some of the amazing projects made by them. It is a mix of their creativity and smart ideas. Join us today and start creating your own projects.
+Take a look to see what happens when innovative ideas meet a bit of know-how.
+</p>
     <div className="project-grid">
       {projects.map((project) => (
         <div key={project.id} className="project-card">

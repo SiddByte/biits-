@@ -1,39 +1,72 @@
-/* CSS for Testimonial Section */
-.testimonial-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  /* CSS for Individual Testimonial */
-  .testimonial {
-    text-align: center;
-    max-width: 300px;
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-  }
-  
-  .testimonial-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto 10px;
-  }
-  
-  .testimonial-text {
-    font-size: 16px;
-    margin: 10px 0;
-  }
-  
-  .testimonial-name {
-    font-weight: bold;
-  }
-  
-  /* Additional styling can be added as per your design requirements */
-  
+/* Add this CSS in your stylesheets or use a CSS-in-JS solution */
+
+.testimonial-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.testimonial-item {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto; /* Center the image horizontally */
+  display: block;
+  object-fit: cover; /* Ensure the image maintains its aspect ratio */
+  margin-bottom: 15px;
+}
+
+.testimonial-item p {
+  margin: 8px 0;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* Slick Carousel styles */
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #007bff;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #333;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #007bff;
+}

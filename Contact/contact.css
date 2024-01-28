@@ -16,7 +16,6 @@
 
 .contact-us {
   background-color: #f4f4f4;
-
 }
 
 .contact-heading {
@@ -37,6 +36,7 @@
 
 .contact-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 20px;
@@ -84,9 +84,15 @@
   /* Example: add padding, input styles, etc. */
 }
 
-
 @media (max-width: 768px) {
-  .contact-details{
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .map,
+  .contact-details,
+  .contact-form {
     width: 100%;
   }
 }

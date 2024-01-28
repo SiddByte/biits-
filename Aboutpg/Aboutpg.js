@@ -19,10 +19,13 @@ const AboutUspg = () => {
         <div className="text-content">
           <h2>Our Mission</h2>
           <p>
-          Our programming courses are designed to provide you with a solid foundation in programming concepts and languages, including Java, Python, C/C++, and more additional skills such as digital marketing, web development, web designing. Our experienced instructors will guide you through each step of the learning process, offering personalized attention and support to help you achieve your goals. 
-These all courses are available with or without a project.
+          Welcome to BIITS Academy, your gateway to a world of coding excellence in Bhilwara! Our institute is dedicated to making programming languages accessible and enjoyable for everyone. As a premier destination for learning, we prioritize not only technical skills but also focus on empowering individuals to become well-rounded programmers. At BIITS, we foster problem-solving, critical thinking, and creativity, ensuring our students are prepared to tackle any coding challenge.
 
--how does project helps in development or developing you skills stronger.
+Our friendly and supportive teachers are here to guide you on your coding journey, whether you're a complete beginner or seeking to enhance your existing skills. Join our vibrant community of learners who share the excitement for programming and gain hands-on experience through our interactive classes.
+
+Discover a variety of courses tailored for skill development, designed to cater to individuals dreaming of building their own apps, pursuing a career in IT, or simply exploring the fascinating world of coding. Our institute, located in Bhilwara, is the perfect place to embark on this exciting coding adventure.
+
+Unlock your coding potential at BIITS Academy – where learning is fun, interactive, and transformative. Join us and be part of a community that celebrates the joy of coding!
           </p>
         </div>
 

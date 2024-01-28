@@ -18,8 +18,8 @@ function Why() {
     {
       title: 'Career Placement',
       description: 'Work on cutting-edge projects that challenge and inspire you.',
-      buttonText: 'View Projects',
-      link: '/career', // Add a correct link value
+      buttonText: 'Career',
+      link: '/Placement', // Add a correct link value
     },
     {
       title: 'Expert Instructors',

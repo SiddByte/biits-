@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './Form.css'; 
+import emailjs from 'emailjs-com';
+import './Form.css';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -17,10 +18,23 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission, e.g., send data to a server or perform client-side validation
-    console.log(formData); // You can replace this with your desired action
+
+    try {
+      await emailjs.send(
+        'service_v7c8xdi', // Replace with your Email.js service ID
+        'template_salrx3j', // Replace with your Email.js template ID
+        formData,
+        'nPJUW3uiTKzd2Yia_' // Replace with your Email.js user ID
+      );
+
+      console.log('Email sent successfully');
+      // You can perform additional actions after successful email submission
+    } catch (error) {
+      console.error('Error sending email:', error);
+      // Handle the error accordingly
+    }
   };
 
   return (
